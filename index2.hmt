@@ -15,11 +15,15 @@
     </h1>
     
     <ul>
-  
+        <li> </li>
     </ul>   
 
     <script>
-      
+      fetch ('./data.json)
+          .then(res =>res.json())
+          .then(data=> {
+              console.log (data);
+          });
     </script>
 
     
