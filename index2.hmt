@@ -19,10 +19,15 @@
     </ul>   
 
     <script>
+      const listEL = document.querySelector('ul');
       fetch ('./data.json)
           .then(res =>res.json())
           .then(data=> {
-              console.log (data);
+              data.forEach( post=> {
+                  <li> po
+                  listEl.insertAdjacentHTML('beforend', '<li> ${post.{post.title}</li>');
+
+              });
           });
     </script>
 
